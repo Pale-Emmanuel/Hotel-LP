@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px 25px 20px;
+}
+nav a{
+    text-decoration: none;
+}
+#elite{
+    display: flex;
+    align-items: center;
+}
+#elite span{
+    padding-left: 10px;
+}
+#second-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.four-nav{
+    padding-right: 20px;
+    color: black;
+    font-size: 1.2rem;
+}
+#book-button{
+    background: rgb(235, 169, 46);
+    border-radius: 10px;
+    border: none;
+    width: 12vw;
+    height: 3vh;
+    margin-right: 20px;
+}
+#book-button:hover{
+    background: rgb(5, 67, 5);
+    color: white;
+    transition: 1.3s;
+}
+main{
+    background-image: url(images/hotel-room.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#check-out-section{
+    background: white;
+    width: 70vw;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+#check-in{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px 15px 0px;
+}
+#two-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0rem 4rem 1rem 0rem;
+}
+.availability{
+    width: 20vw;
+    height: 3vh;
+    border-radius: 20px;
+    border: none;
+    background: rgb(240, 210, 153);
+    margin-right: 15px;
+}
+.availability:hover{
+    background: #556B2F;
+    color: rgb(217, 220, 217);
+    transition: 1.1s;
+}
+.view-all{
+    width: 10vw;
+    border-radius: 20px;
+    border: none;
+    background: black;
+    color: white;
+}
+.view-all:hover{
+    background: #FFFDD0;
+    color: #556B2F;
+    transition: 1.1s;
+}
+#check-in i{
+    padding-left: 15px;
+}
+main h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+}
+main p{
+    color: #155818;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+#explore-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0px 10px 0px;
+}
+#container{
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+    height: 500px;
+    width: 100%;
+}
+#container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item{
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.big-one{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+.info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: white;
+    border-radius: 0 0 16px 16px;
+}
+.info h3{
+    padding-bottom: 10px;
+}
+.top-pool{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+.first-small{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.second-small{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+.item::after{
+    content: "♡";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+#dining{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0px 10px 0px;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 30px;
+    align-items: center;
+    max-width: 100%;
+    background: white;
+    padding: 20px;
+    font-family: sans-serif;
+}
+.four-small{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.boxes{
+    background: #f7f5f3;
+    border-radius: 16px;
+    padding: 18px 20px;
+}
+.boxes.active{
+    background: #f9eec0;
+}
+.box-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+.box-title span{
+    color: #d4a017;
+}
+.boxes p{
+    font-size: 15px;
+    color: #666;
+    margin-left: 36px;
+}
+#big-right-side{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.text{
+    flex: 1;
+}
+#desc{
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 30px;
+}
+#arrow{
+    width: 50px;
+    height: 50px;
+    background: #f9eec0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+#arrow:hover{
+    background: #155818;
+    transition: 1.1s;
+}
+.side-img{
+    width: 130px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+footer{
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 0px 0px;
+}
+#inspired{
+    display: flex;
+    height: 13vh;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid pink;
+}
+#inspired h2{
+    padding: 30px 0px 10px 30px;
+}
+#inspired p{
+    padding-left: 30px;
+}
+#inspired-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14vw;
+}
+#inspired-brand span{
+    color: #f9eec0;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 20px 0px;
+    padding: 0px 30px 0px 30px;
+}
+.three-bottom-quick-links{
+    display: flex;
+    flex-direction: column;
+}
+.bottom a{
+    text-decoration: none;
+    color: white;
+}
+#brands{
+    display: flex;
+    justify-content: space-around;
+}
+#world{
+    padding-bottom: 10px;
+}
+#middle{
+    border-right: 0.5px solid rgb(210, 200, 200);
+    border-left: 0.5px solid rgb(210, 200, 200);
+    padding: 0px 5px 0px 5px;
+}
+.bottom h3{
+    padding: 10px 0px 16px 0px;
+}
+.two-links{
+    padding-bottom: 10px;
+}
+#forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(25, 25, 25);
+    height: 4vh;
+    border-radius: 10px;
+    border: 0.5px solid pink;
+    padding: 0px 5px 0px 5px;
+}
+#forms input{
+    height: 3vh;
+    background: rgb(25, 25, 25);
+    border: none;
+    width: 20vw;
+    color: white;
+}
+#forms button{
+    height: 3vh;
+    background: rgb(233, 165, 39);
+    border-radius: 6px;
+    border: none;
+    width: 10vw;
+}
+#forms button:hover{
+    background: #155818;
+    color: #FFFDD0;
+    transition: 1.1s;
+}
